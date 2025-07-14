@@ -4,7 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import OtherPage from "./OtherPage";
 import Fib from "./Fib";
- 
+
 function App() {
   return (
     <Router>
@@ -30,5 +30,5 @@ function App() {
     </Router>
   );
 }
- 
+
 export default App;
