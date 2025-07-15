@@ -11,9 +11,9 @@ script:
 
 after_success:
   - docker build -t rahul6004/multi-client ./client
-  - docker build -t rahul6004/multi-client ./nginx
-  - docker build -t rahul6004/multi-client ./server
-  - docker build -t rahul6004/multi-client ./worker
+  - docker build -t rahul6004/multi-nginx ./nginx
+  - docker build -t rahul6004/multi-server ./server
+  - docker build -t rahul6004/multi-worker ./worker
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
